@@ -1,0 +1,175 @@
+/*!
+ * Bootstrap Grid v5.0.0-beta2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.container,
+.container-full,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+
+//Grid Start
+.o-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: auto;
+}
+.o-10 {
+  grid-column: span 1;
+}
+
+.o-2 {
+    grid-column: span 2;
+}
+.o-3 {
+    grid-column: span 3;
+}
+.o-4 {
+    grid-column: span 4;
+}
+.o-5 {
+    grid-column: span 5;
+}
+.o-6 {
+    grid-column: span 6;
+}
+.o-7 {
+    grid-column: span 7;
+}
+.o-8 {
+    grid-column: span 8;
+}
+.o-9 {
+    grid-column: span 9;
+}
+.o-10 {
+    grid-column: span 10;
+}
+.o-11 {
+  grid-column: span 11;
+}
+.o-12 {
+  grid-column: span 12;
+}
+
+@media (max-width:991px) {
+  .o-6{
+    grid-column: span 6;
+  }
+  .o-3{
+    grid-column: span 6;
+  }
+}
+
+@media (max-width:768px) {
+  .o-6{
+    grid-column: span 12;
+  }
+
+  .o-3{
+    grid-column: span 6;
+  }
+
+  .o-4{
+    grid-column: span 6;
+  }
+
+  .o-md-6{
+    grid-column: span 6;
+  }
+}
+
+@media (max-width:576px) {
+  .o-3, .o-4,.o-5, .o-6, .o-7, .o-8, .o-9, .o-10, .o-11{
+    grid-column: span 12;
+  }
+
+  .o-sm-6 {
+    grid-column: span 6;
+  }
+}
+
+.g-0 {
+  gap: 0;
+}
+
+.g-1 {
+  gap: 0.25rem;
+}
+
+.g-2 {
+  gap: 0.5rem;
+}
+
+.g-3 {
+  gap: 1rem;
+}
+
+.g-4 {
+  gap: 1.5rem;
+}
+
+.g-5 {
+  gap: 3rem;
+}
+
+.g-6 {
+  gap: 3.5rem;
+}
+.g-7 {
+  gap: 4rem;
+}
+//Media Queries
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 992px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 576px) {
+  
+}

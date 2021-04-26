@@ -1,0 +1,313 @@
+//New
+
+:root{
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card {
+    padding:1.2rem;
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+.f_top,
+.stickTop{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+.primary {
+    background: var(--primary-color);
+}
+
+.success {
+    background: var(--success-color);
+}
+
+.info {
+    background: var(--info-color);
+} 
+
+.danger {
+    background: var(--danger-color);
+}
+
+.dark {
+    background: var(--dark-color);
+}
+
+.warning {
+    background: var(--warning-color);
+}
+
+[class^='btn_'].sm{
+    padding: .5rem 1rem;
+}
+
+[class^='btn_'] {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    border-radius: 1px;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid currentColor;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.109);
+    line-height: 120%;
+    color:#fff;
+}
+.lg{
+    padding: 1rem 2.25rem;
+}
+
+.btn_primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn_success {
+    color: #fff;
+    border-color: var(--success-color);
+    background: var(--success-color);
+}
+
+.btn_danger {
+    color: #fff;
+    border-color: var(--danger-color);
+    background: var(--danger-color);
+}
+
+.btn_warning {
+    color: #fff;
+    border-color: var(--warning-color);
+    background: var(--warning-color);
+}
+
+.btn_info {
+    color: #fff;
+    border-color: var(--info-color);
+    background: var(--info-color);
+}
+
+
+.btn_dark {
+    color: #fff;
+    border-color: var(--dark-color);
+    background: var(--dark-color);
+}
+
+.btn_outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn_outline-success {
+    border-color: var(--success-color);
+    color: var(--success-color);
+    background: transparent;
+}
+
+.btn_outline-danger {
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+.btn_outline-warning {
+    border-color: var(--warning-color);
+    color: var(--warning-color);
+}
+
+.btn_outline-info {
+    border-color: var(--info-color);
+    color: var(--info-color);
+}
+
+.btn_outline-dark {
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+}
+
+.btn_otn-p {
+    color:#fff;
+    background: linear-gradient(65deg,#FF4D79 0,#FF809F 100%);
+    border: inherit;
+    box-shadow: 0 8px 24px rgba(255, 77, 122, 0.25);
+    transition: all .3s var(--ease-in-out-circ);
+    &:hover{
+        opacity: .7;
+    }
+}
+
+.btn_otn-s {
+    color:#fff;   
+    background: linear-gradient(65deg,#5E52F6 0,#8B82F9 100%);
+    box-shadow: 0 8px 24px rgba(94,82,246,.25);
+    border: inherit;
+    transition: all .3s var(--ease-in-out-circ);
+    &:hover {
+        opacity: .7;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+}
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+  pointer-events: none;
+  opacity: 0.65;
+}
+.btn:active{
+    transform: translateY(-1px);
+}
+
+
+//Table 
+
+.op_table{
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    overflow-x: auto;
+    tr {
+        padding: 1rem;
+        td,th {
+            border: rgba(170, 170, 170, 0.61) 1px solid;
+            text-align: center;
+            padding: 8px;
+        }
+    }
+}
+
+//Nav Bar Property
+
+.nav_bar{
+    width: 100%;
+    background: #fcfcfc;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.09);
+    padding: 1rem 0;
+    transition: all .4s ease-in;
+    z-index: 999;
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+/*-------Toggler
+*/
+.nav_toggler{
+    display: none;
+    cursor: pointer;
+}
+/*-------Navicon
+*/
+.nav_icon{
+    background: url("https://img.icons8.com/ios/72/menu--v1.png") no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100% 100%;
+}
+
+.nav_toggler.close .nav_icon{
+    background: url("https://img.icons8.com/fluent-systems-regular/2x/delete-sign.png") no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100% 100%;
+}
+
+//Navigation
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu{
+        display: flex;
+        list-style: none!important;
+        margin: 0;
+        padding: 0;
+        .nav_item{
+            text-align: center;
+            .nav_link{
+                padding: .6rem 1rem;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.726);
+                font-weight: 500;
+                text-transform: capitalize;
+                font-size: 1rem;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+ //NavBar media 
+@media (max-width:991px) {
+    .nav_toggler{
+        display: block;
+    }
+
+    .navigation{
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0;
+        .menu{
+            flex-direction: column;
+            .nav_item{
+                line-height: 2;
+            }
+        }
+        &.active{
+            overflow: visible;
+            height: 100%;
+        }
+    }
+}
+
+.op_card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    .card_img {
+        img{
+            width: 100%;
+        }
+    }
+    .card_content {
+        flex: 1 1 auto;
+        padding: 1rem 1rem;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,yBAAI;AACZ,OAAO,CAAC,8BAAI;AACZ,OAAO,CAAC,yBAAI;AACZ,OAAO,CAAC,2BAAI;AACZ,OAAO,CAAC,oBAAI",
+    "sources": [
+        "opacity_plus.scss"
+    ],
+    "names": [],
+    "file": "opacity_plus.css"
+}
